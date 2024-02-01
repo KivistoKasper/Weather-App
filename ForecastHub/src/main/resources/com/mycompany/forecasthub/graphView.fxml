@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" minHeight="927.0" minWidth="1470.0" prefHeight="927.0" prefWidth="1470.0" style="-fx-background-color: #7C7C7C;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.forecasthub.GraphController">
+    <children>
+        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="1158.0" style="-fx-background-color: #262A31; -fx-border-radius: 8px;">
+            <children>
+                <Label text="Weather Forecast" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="56.0" />
+                    </font>
+                </Label>
+                <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                <HBox alignment="CENTER" prefHeight="126.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="chartButton" onAction="#showChart" mnemonicParsing="false" prefHeight="50.0" prefWidth="134.0" style="-fx-cursor: hand;-fx-background-color: #ffffff; -fx-border-radius: 8px 0px 0px 8px;" text="Chart" >
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Button>
+                        <Button  fx:id="tableButton" onAction="#showTable"  mnemonicParsing="false" prefHeight="50.0" prefWidth="134.0" style="-fx-cursor: hand;-fx-background-color: #444444; -fx-border-radius: 0px 8px 8px 0px;" text="Table" textFill="WHITE">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+            <VBox.margin>
+                <Insets top="92.0" />
+            </VBox.margin>
+            <padding>
+                <Insets left="36.0" right="36.0" />
+            </padding>
+        </HBox>
+        <VBox  fx:id="dataNode" prefHeight="488.0" prefWidth="1158.0" spacing="8.0" style="-fx-background-color: #262A31;">
+            <children>
+            </children>
+            <VBox.margin>
+                <Insets top="48.0" />
+            </VBox.margin>
+            <padding>
+                <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+            </padding>
+        </VBox>
+    </children>
+    <padding>
+        <Insets left="156.0" right="156.0" />
+    </padding>
+</VBox>

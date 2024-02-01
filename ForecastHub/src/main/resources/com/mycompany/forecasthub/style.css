@@ -1,0 +1,8 @@
+.choice-box {
+   -fx-background-color: #444444;
+}
+
+.choice-box > .label { 
+    -fx-font-weight:bold;
+    -fx-text-fill: white;
+}
